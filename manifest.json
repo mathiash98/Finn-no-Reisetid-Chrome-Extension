@@ -1,0 +1,22 @@
+{
+    "name": "Finn.no Reisetid",
+    "version": "1.0",
+    "description": "Travel time for finn.no ads",
+    "permissions": ["declarativeContent", "activeTab", "tabs", "storage", "https://maps.googleapis.com/"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [{
+        "matches": ["https://www.finn.no/realestate/homes/search.html?*"],
+        "css": ["travelTime.css"],
+        "js": ["travelTime.js"],
+        "run_at": "document_end"
+    }],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Finn.no reisetid innstillinger"
+    },
+
+    "manifest_version": 2
+}
