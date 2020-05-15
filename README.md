@@ -2,6 +2,10 @@
 Finn.no reisetid fra annonse til addresse med bil, kollektiv, sykkel eller gå som en chrome extension.
 Kommer nok snart i en chrome extension butikk nær deg (Den blir sikkert aldri publisert). 
 
+Skikkelig hacky kode skrevet av meg, men det funker.
+
+![Bilde av extension i bruk](./skjermdump.png)
+
 Av funksjoner som er verdt å nevne:
 - Knyttet til Google Maps Directions API
 - Cache av reisetider i local chrome extension storage
